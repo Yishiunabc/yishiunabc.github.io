@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>盧怡薰的美食網站</h2>
+<p>哈囉你好！！</p>
+<p></p>
+<p><strong>歡迎來到食堂天地</strong></p>
+
+<header>
+  <h2>台南美食</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">安平</a></li>
+      <li><a href="#">赤崁</a></li>
+      <li><a href="#">中西</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>在地推薦</h1>
+    <p>台南地域位置背山面海，孕育了豐饒的漁產山產；在文化歷史地位上，台南則是台灣歷史的起源，保存了近400年本土文化與異文化的飲食特色，再加上職人嚴選食材、存古法創新意的廚藝手法造就了台南美食小吃的獨特性，也成就了「美食之都」的稱號。</p>
+  </article>
+</section>
+
+</body>
+<p style=small;text-align:center>&copy;盧怡薰所有，未經授權請勿轉發、使用</p>
+
+</html>
+
